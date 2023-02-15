@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+button {
+  cursor: pointer;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  z-index: -9999999;
+
+  width: 100vw;
+  height: 100vh;
+}
+.center {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  background-color: rgba(187, 59, 59, 0.7);
+  margin-bottom: 100px;
+  transition: 0.3s ease-out;
+  opacity: 1;
+  
+}
+.content h2 {
+  color: whitesmoke;
+  font-family: "Rubik Mono One", sans-serif;
+  font-weight: bolder;
+  padding: 10px 5px 30px 5px;
+}
+.marvel {
+  color: white;
+  background-color: rgb(255, 0, 0, 2.2);
+  padding: 5px 5vw;
+  border-radius: 20%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-inline: auto;
+  margin-block: 15px;
+  display: block;
+  font-size: 2rem;
+}
+.marvel:active {
+  color: rgb(255, 0, 0, 2.2);
+  background-color: white;
+}
+.dc {
+  background-color: rgb(255, 255, 255, 2.2);
+  color: #2962ff;
+  padding: 5px 5vw;
+  border-radius: 50%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-inline: auto;
+  margin-block: 15px;
+  font-size: 2rem;
+
+  text-align: center;
+
+  display: block;
+}
+.dc:active {
+  background-color: #2962ff;
+  color: rgb(255, 255, 255, 2.2);
+}
+.result {
+  width: 80vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 80vh;
+  border-radius: 20%;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vw;
+  opacity: 0;
+  display: flex;
+  background-color: red;
+  transition: 0.3s ease-in;
+  position: absolute;
+  
+  box-shadow: 2.5px 5px 7.5px 2.5px green;
+  z-index: -1;
+}
+
+.visible {
+  opacity: 1;
+  z-index: 1;
+}
+.invisible {
+  opacity: 0;
+}
+
+
+@media (max-width: 769px) {
+  .content h2{
+    font-size: 1rem;
+  }
+
+  
+}
